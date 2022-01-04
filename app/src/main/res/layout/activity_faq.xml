@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F0F2"
+    tools:context=".Faq">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF3D56B2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="FAQ"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backBtn"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar"
+            app:layout_constraintStart_toEndOf="@+id/backBtn"
+            app:layout_constraintTop_toTopOf="@+id/backBtn" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Frequently Asked Questions"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="200dp"
+            android:layout_height="115dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView28"
+            app:srcCompat="@drawable/faq" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="375dp"
+            android:layout_height="270dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    android:text="১. আমার যদি জ্বর বা কাশির মতো উপসর্গ থাকে তবে আমার কি করা উচিত?"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:padding="5dp"
+                    android:text="যেহেতু কোভিড-১৯ এর লক্ষণগুলির সাথে সাধারণ মরশুমি জ্বর বা ইনফ্লুয়েঞ্জার কোনও পার্থক্য নেই, তাই জ্বর ও কাশি আছে মানেই যে আপনি করোনা আক্রান্ত, তার কোন নিশ্চয়তা নেই, আপনার হয়ত সাধারণ মরশুমি জ্বর বা ইনফ্লুয়েঞ্জা হয়েছে। তবুও আপনি যদি নিজেকে করোনা আক্রান্ত বলে সন্দেহ করেন, তবে প্রথমেই আপনাকে 'সেলফ-কোয়ারান্টিনে' থাকতে হবে অর্থাৎ বাড়ির কোন একটি নির্দিষ্ট ঘরে অথবা এমন কোন জায়গায় থাকতে হবে যেখানে অন্যান্য লোকের সঙ্গে আপনার যতটা সম্ভব কম মেলামেশা হবে, যাতে আপনার থেকে রোগটি অন্য কারোর শরীরে না ছড়ায়। এটা যতটা সম্ভব কঠোরভাবে পালন করা উচিত। এমনকি যারা আপনার দেখাশোনা করবেন, তারাও যেন আপনার সাথে কোনরকম শারীরিক সংস্পর্শে না আসেন। এরপর আপনার কাছের স্বাস্থ্য পরিষেবায় বা হেল্পলাইনে জানান ও তাদের পরামর্শ মতো চলুন।"
+                    android:textColor="#2C2C2C"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView8"
+            android:layout_width="375dp"
+            android:layout_height="175dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    android:text="২. একবার যাঁরা করোনাভাইরাসে আক্রান্ত হন, তাঁরা কি পরের বারের সংক্রমণ \nথেকে নিরাপদ থাকেন?"
+                    android:textColor="#000000"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:padding="5dp"
+                    android:text="হ্যা। এই প্রসঙ্গে জনস্বাস্থ্য বিশেষজ্ঞরা  বলেন, দ্বিতীয় বার কারও কারও ক্ষেত্রে সংক্রমণ ফিরে আসছে। কারও কারও ক্ষেত্রে ভাইরাল লোড (রক্তে ভাইরাসের পরিমাণ) কম থাকে প্রথম বারের সংক্রমণে। তাই রোগ প্রতিরোধ ক্ষমতাও দুর্বল হচ্ছে। রোগ প্রতিরোধের স্থায়িত্বও কম হচ্ছে। এই কারণেই সংক্রমণ ফিরে আসছে বলে মনে করা হচ্ছে। অ্যান্টিবডির স্থায়িত্ব কম হওয়ায় ফের সংক্রমণের আশঙ্কাও থাকছে।"
+                    android:textColor="#2C2C2C"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView9"
+            android:layout_width="375dp"
+            android:layout_height="210dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView8"
+            app:layout_constraintStart_toStartOf="@+id/cardView8"
+            app:layout_constraintTop_toBottomOf="@+id/cardView8">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    android:text="৩. সেলফ আইসোলেশন বা রোগ সংক্রমণের শঙ্কায় নিজস্ব কোয়ারেন্টাইন বা\nআলাদা থাকার বিষয়টি কী?"
+                    android:textColor="#000000"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:padding="5dp"
+                    android:text="সেলফ আইসোলেশন মানে হচ্ছে বাড়িতে ১৪ দিন থাকা। ওই সময়টায় কাজে না যাওয়া, স্কুলে বা অন্যান্য জনসমাগমে না যাওয়া এবং গণপরিবহন বা ট্যাক্সি পরিহার করা। বাড়িতে পরিবারের অন্য সদস্যদের থেকেও আলাদা হয়ে থাকতে হয়। কারও সামনে আসা উচিত নয়। এ সময়টায় খাবার, ওষুধসহ প্রয়োজনীয় কিছুর দরকার হলে সাহায্যকারী কাউকে বলুন সেসব আপনার দরজায় পৌঁছে দিতে। এ সময় বাড়ির পোষা প্রাণী থেকেও দূরে থাকতে হবে। যদি সেটা সম্ভব না হয়, তবে পোষা প্রাণীদের স্পর্শ করার আগে পরে হাত ধুয়ে নিন।"
+                    android:textColor="#2C2C2C"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView10"
+            android:layout_width="375dp"
+            android:layout_height="365dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView9"
+            app:layout_constraintStart_toStartOf="@+id/cardView9"
+            app:layout_constraintTop_toBottomOf="@+id/cardView9">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:text="৪. আমি শুনেছি যে যাদের করোনা আক্রান্ত বলে সন্দেহ করা হয় তাদেরকেই\n'কোয়ারান্টিন' করা হয়। এর মানে কি? এতে ভয় পাওয়ার কিছু আছে কি ?"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:padding="5dp"
+                    android:text="সাধারণত দুই ধরনের কোয়ারান্টিন হয়।\nএকটিতে,আপনাকে সরকারের ঠিক করা জায়গায় বা ঘরে রাখা হবে, যাতে আপনার সাথে অন্যান্য সুস্থ লোকের যোগাযোগ প্রায় বন্ধ হয়ে যায়।  এটি সাধারণত তাদের ক্ষেত্রেই করা হয়, যাদের থেকে রোগ ছড়ানোর আশঙ্কা প্রবল, যেমন আপনার দেহে যদি করোনার প্রাথমিক লক্ষণগুলি দেখা যায় বা আপনি করোনা আক্রান্ত কোন লোকের সংস্পর্শে এসে থাকেন। তবে মনে রাখবেন এ ব্যাপারে সরকারি নীতি মাঝে মাঝে পালটাতে পারে।\nঅন্যটায়, যদি আপনি কোন ব্যক্তির কাছাকাছি এসে থাকেন যিনি পরবর্তীকালে করোনা আক্রান্ত বলে পরীক্ষায় ধরা পড়েন, তখন আপনাকে 'সেলফ- কোয়ারান্টিন' অর্থাৎ স্বেচ্ছায় গৃহবন্দিও থাকতে বলা হতে পারে। এর অর্থ হ'ল আপনাকে বাড়ির কোনো একটি নির্দিষ্ট ঘরে অথবা এমন কোনো জায়গায় থাকতে হবে যেখানে অন্যান্য লোকের সঙ্গে আপনার যতটা সম্ভব কম যোগাযোগ থাকবে।\n দেশে রোগ ছড়ানোর হার নিয়মিতভাবে পর্যবেক্ষণ করার সাথে সাথে কোয়ারান্টিনের নিয়মগুলিরও মূল্যায়ন করা হচ্ছে। কাদের কোয়ারান্টিন করা হবে আর কাদের করা হবে না সে বিষয়ে সরকার পরে নিয়ম আরও কঠিন করতে পারে। "
+                    android:textColor="#2C2C2C"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="375dp"
+            android:layout_height="215dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cardView10"
+            app:layout_constraintStart_toStartOf="@+id/cardView10"
+            app:layout_constraintTop_toBottomOf="@+id/cardView10">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:padding="5dp"
+                    android:text="৫. মাস্ক ব্যবহার কতটা জরুরি ?"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:padding="5dp"
+                    android:text="সংক্রমণ ঠেকাতে মাস্ক কার্যকর উপায়। মাস্ক কতটুকু সুরক্ষা দেবে তা নির্ভর করে এর গুনগত মান, পরার ধরন এবং কতটা সময় ভালোভাবে পরে থাকছে এবং ওই ব্যক্তির আশপাশে থাকা তরলকণার বিচরণের ধরনের ওপর।\n
+শুধু মাস্ক পুরোপুরি ভাইরাস থেকে সুরক্ষা দিতে পারে না ঠিক। তবে সুরক্ষা কবচ হিসেবে মাস্কের ভূমিকাটাই বেশি। বেশিরভাগ ক্ষেত্রেই মাস্ক পরার উদ্দেশ্য নিজেকে সুরক্ষিত রাখা নয়, আশপাশের মানুষকে সুরক্ষিত রাখা। এরসঙ্গে সামাজিক দূরত্ব আর ব্যক্তিগত পরিচ্ছন্নতা বজায় রাখা যুক্ত হলে তবেই একটি শক্তিশালী সুরক্ষা ব্যবস্থা তৈরি হয়।
+"
+                    android:textColor="#2C2C2C"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

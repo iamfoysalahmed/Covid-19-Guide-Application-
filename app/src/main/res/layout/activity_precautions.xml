@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F0F2"
+    tools:context=".Precautions">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF3D56B2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Precautions"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/backBtn"
+            app:layout_constraintEnd_toEndOf="@+id/toolbar"
+            app:layout_constraintStart_toEndOf="@+id/backBtn"
+            app:layout_constraintTop_toTopOf="@+id/backBtn" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="করোনা থেকে বাঁচতে করণীয়"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView28"
+            app:srcCompat="@drawable/prevention" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
+            android:layout_width="375dp"
+            android:layout_height="225dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView15">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    android:text="মাস্ক ব্যবহার করতে হবে ।"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/mask_prec" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:padding="5dp"
+                    android:text="প্রতি মিনিটে একজন করোনা রোগী স্বাভাবিক\nশ্বাস-প্রশ্বাস ও কথাবার্তা বলার সময় যথাক্রমে ২০-৩০টি ও ২০০-৩০০টি ভাইরাস কনা বাতাসে ছাড়ে। আর স্বাভাবিক\nকথাবার্তা বলার সময় শ্বাস-প্রশ্বাসের চেয়ে ১০ গুণ বেশি ভাইরাস পার্টিকেল ছাড়ে। সঠিকভাবে মাস্ক ব্যবহারে এসকল ভাইরাস কনা মুখ থেকে বের হবার সময় বাধা গ্রস্থ হয়ে পরে এবং বাতাসে কম ছড়ায়।"
+                    android:textColor="#2C2C2C"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView8"
+            android:layout_width="375dp"
+            android:layout_height="245dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView6">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    android:text="হাচি-কাশি দেওয়ার সময় মুখ ঢেকে রাখতে হবে।"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/sneeze_prec" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:padding="5dp"
+                    android:text="মানুষের হাঁচি-কাশির সময়ে যে জলীয় কনা বের হয়,\nতা বাইরে এসে তিন ভাগ হয়ে যায়। প্রথমাংশ নিজের জামাকাপড়, চেয়ার-টেবিল ইত্যাদিতে পড়ে; দ্বিতীয়াংশ জলীয়কনা হিসেবেই মাটিতে পড়ে এবং সর্বশেষ অংশ জলীয়কনা ভেঙে রেস্পিরেটরি অ্যারোসল হিসেবে বাতাসে ভেসে বেড়ায়। হাচি-কাশির সময় টিস্যু অথবা রুমাল  দিয়ে মুখ ঢেকে রাখার ফলে ভাইরাস বহনকারী অ্যারোসল চারিদেকে ছড়িয়ে পরার হার অনেকাংশে কমে যায়।"
+                    android:textColor="#2C2C2C"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView9"
+            android:layout_width="375dp"
+            android:layout_height="342dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView8"
+            app:layout_constraintStart_toStartOf="@+id/cardView8"
+            app:layout_constraintTop_toBottomOf="@+id/cardView8">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    android:text="সাবান পানি দিয়ে ধোয়ার অভ্যাস করতে হবে।"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView32"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/wash_hand_prec" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:padding="5dp"
+                    android:text="হাত দিয়ে আমরা প্রতিনিয়ত কত কিছুই না ধরি।\nএসব জিনিসে লেগে থেকে অসংখ্য জীবাণু। হাত দিয়ে নাক–মুখ ঢেকে হাঁচি-কাশি দিলে হাত জীবানুযুক্ত হয়। এরপর হাত না ধুয়ে খাবার খেলে অথবা মুখ–চোখ–নাক স্পর্শ করলেও জীবাণু শরীরে ঢুকে যায়। তাই কেবল করোনার জীবাণু নয়, যে কোনো জীবাণুকে রুখতে দিনে অন্তত ছয়বার হাত ধুতেই হবে।এ ছাড়া বাড়ির বাইরে থেকে ফিরলে, বাথরুম, যে কারও সঙ্গে হাত মেলানো বা কোলাকুলি করার পর, খাবার রান্নার আগে, পরে, খাওয়ার আগে, পরে, অসুস্থ কাউকে সেবা দিলে, শরীরে কোনো কাটা অংশে অথবা ক্ষত স্থানে হাত দিলে, শিশুর ডায়াপার বদলালে, নাক ঝাড়লে, হাঁচি–কাশির সময় মুখে হাত দিলে, পোষা প্রাণীর গায়ে হাত দিলে, খাবার দিলে, জুতায় হাত দিলে বা ময়লা পরিষ্কার করলে অবশ্যই হাত ধোবেন।"
+                    android:textColor="#2C2C2C"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="375dp"
+            android:layout_height="280dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cardView9"
+            app:layout_constraintStart_toStartOf="@+id/cardView9"
+            app:layout_constraintTop_toBottomOf="@+id/cardView9">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:padding="5dp"
+                    android:text="জনসমাগম এড়িয়ে চলতে হবে।"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/social_distance_prec" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:inputType="textMultiLine|textNoSuggestions|none"
+                    android:padding="5dp"
+                    android:text="করোনাভাইরাস কোনও লক্ষণ-উপসর্গ ছাড়াই দুই সপ্তাহের বেশি সময় ধরে যেকোনও ব্যক্তির দেহে তার অজান্তেই বিদ্যমান থাকতে পারে। এরকম করোনাভাইরাস বহনকারী ব্যক্তি যদি কোনও কারণে হাঁচি বা কাশি দেন, তাহলে তার আশেপাশের বাতাসে ৩ থেকে ৬ ফুট দূরত্বের মধ্যে করোনাভাইরাসবাহী জলীয় কণা বাতাসে ভাসতে শুরু করে এবং ঐ পরিধির মধ্যে অবস্থিত অন্য যেকোনও ব্যক্তির দেহে স্বাভাবিক শ্বাস-প্রশ্বাসের মাধ্যমে ভাইরাস প্রবেশ করতে পারে। এ কারণে জনসমাগম বেশি আছে, এরকম এলাকা অতি-আবশ্যক প্রয়োজন না হলে যথাসম্ভব এড়িয়ে চলতে হবে।"
+                    android:textColor="#2C2C2C"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView33" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
